@@ -26,7 +26,7 @@ const itemsSchema = {
 const Item = mongoose.model("Item", itemsSchema);
 
 //Creamos documentos
-const task1 = new Item({ name: "Bienvienido a tu lista de quehaceres" });
+const task1 = new Item({ name: "Bienvenido a tu lista de quehaceres" });
 const task2 = new Item({ name: "Apreta el + para agregar una nueva tarea" });
 const task3 = new Item({ name: "<- Apreta aquí para eliminar una tarea" });
 
