@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.set("strictQuery", false);
-require('dotenv').config({path: 'vars/.env'});
+require('dotenv').config({path: '.env'});
 // mongoose.connect("mongodb://localhost:27017/todolistDB");
 const MONGODB_ATLAS = process.env.MONGODB_ATLAS;
 mongoose.connect(MONGODB_ATLAS);
